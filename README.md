@@ -10,7 +10,7 @@ The Lorenz's attractors are definded by the following set of equations:
 
 ### Compile and run
 
-- To compile use: g++ numerical.cpp lorenz.cpp simulate.cpp -o simulate
+- To compile use: g++ numerical.cpp lorenz.cpp simulate.cpp -o simulate -fopenmp
 - To run: ./simulate
 - To visualize the results: python plotting.py
 
