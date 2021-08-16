@@ -53,7 +53,7 @@ class lorenz
         void set_dt(float dt);
 
         //_________________________________________ SAVE FILE ________________________________________//
-        void save();
+        void save(const char* filename);
 };
 
 #endif

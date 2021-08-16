@@ -155,11 +155,11 @@ void lorenz::set_dt(float dt)
 }
         
 //_________________________________________ SAVE FILE ________________________________________//
-void lorenz::save() 
+void lorenz::save(const char* filename) 
 {
     // Save results to file
     std::ofstream myfile;    
-    myfile.open("results.txt");
+    myfile.open(filename);
 
     for(auto t=0; t<this->n_iter; t++)
     {

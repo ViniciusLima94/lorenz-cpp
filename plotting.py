@@ -1,9 +1,12 @@
+import sys
 import numpy              as np 
 import matplotlib.pyplot  as plt 
 from mpl_toolkits.mplot3d import Axes3D
 
+idx = sys.argv[-1]
+
 # Load the data
-x,y,z = np.loadtxt("results.txt",delimiter=",",unpack=True)
+x,y,z = np.loadtxt(f"data/results{idx}.txt",delimiter=",",unpack=True)
 
 # Plot the results
 fig = plt.figure(figsize=(15,20))
