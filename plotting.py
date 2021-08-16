@@ -9,7 +9,7 @@ idx = sys.argv[-1]
 x,y,z = np.loadtxt(f"data/results{idx}.txt",delimiter=",",unpack=True)
 
 # Plot the results
-fig = plt.figure(figsize=(15,20))
+fig = plt.figure(figsize=(15,10))
 fig.suptitle('Lorenz\'s attractor', fontsize=20)
 ax = fig.add_subplot(2, 3, 1)
 plt.plot(x,y)
@@ -28,4 +28,5 @@ plt.plot(x, y, z)
 ax.set_xlabel('x', fontsize=15)
 ax.set_ylabel('y', fontsize=15)
 ax.set_zlabel('z', fontsize=15)
-plt.show()
+plt.savefig('lorenzatt.png',dpi=300)
+#  plt.show()

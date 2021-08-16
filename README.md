@@ -15,3 +15,4 @@ The Lorenz's attractors are definded by the following set of equations:
 - To visualize the results: python plotting.py
 
 
+![](lorenzatt.png)

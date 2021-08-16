@@ -13,7 +13,7 @@ void swap_rho(float* rho, int n)
     float sig  = 10;
     float beta = 8/3;
     // Default parameters for n_iter and dt
-    int n_iter = 1000;
+    int n_iter = 2000;
     float dt   = 1e-2;
 
     // Run over rhos in parallel
